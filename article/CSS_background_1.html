@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://i.imgur.com/g0aUWB3.png">
 <meta property="article:published_time" content="2020-02-08T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-02-09T06:32:25.931Z">
+<meta property="article:modified_time" content="2020-02-09T06:37:37.865Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="css">
 <meta property="article:tag" content="front-end">
@@ -264,17 +264,16 @@ linear-gradient 的語法是：</p>
 <h2 id="background-size"><a class="header-anchor" href="#background-size"></a>background-size</h2>
 <p>用來聲明背景圖片的大小。</p>
 <ul>
-<li><code>contain</code><br>
-contain 值是不超過原圖的大小這個前提下，等比縮小到符合容器大小，不加以裁切或伸展，通常用在圖比容器大的時候。以下面的例子來說，圖片是1000*677，而容器是300*200，為了不裁切到圖片，圖片會等比縮到約299*200。</li>
-</ul>
-   <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(./image/cloud.png);</span><br><span class="line">    <span class="attribute">background-size</span>: contain;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<pre><code>![](https://i.imgur.com/Z6Vcnkm.png)
-</code></pre>
-<ul>
+<li>
+<p><code>contain</code><br>
+contain 值是不超過原圖的大小這個前提下，等比縮小到符合容器大小，不加以裁切或伸展，通常用在圖比容器大的時候。以下面的例子來說，圖片是1000*677，而容器是300*200，為了不裁切到圖片，圖片會等比縮到約299*200。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(./image/cloud.png);</span><br><span class="line">  <span class="attribute">background-size</span>: contain;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/Z6Vcnkm.png" alt=""></p>
+</li>
 <li>
 <p><code>cover</code><br>
 cover 值是等比例縮放，讓圖片可以蓋滿元素寬高，若因為比例與元素不均等，導致寬度或高度超過，就會裁切。以同樣的圖片為例，圖片是 1000*677，<code>&lt;div&gt;</code>佔滿瀏覽器寬度約 1280。圖片為了蓋滿寬高，會等比放大成約 1280*866 的大小，高度高過 300px 的部分都會被裁切掉。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">background-image</span>: <span class="built_in">url</span>(./image/cloud.png);</span><br><span class="line">    <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">background-image</span>: <span class="built_in">url</span>(./image/cloud.png);</span><br><span class="line">  <span class="attribute">background-size</span>: cover;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://i.imgur.com/A6qkwCx.png" alt=""></p>
 </li>
 <li>
@@ -291,7 +290,7 @@ cover 值是等比例縮放，讓圖片可以蓋滿元素寬高，若因為比�
 
 
 
-    <a data-url="https://onlystp417.github.io/article/CSS_background_1.html" data-id="ck6eniig400020g8og1u52iyn" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://onlystp417.github.io/article/CSS_background_1.html" data-id="ck6enofg600025y8o2wbbgz9d" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -372,7 +371,7 @@ cover 值是等比例縮放，讓圖片可以蓋滿元素寬高，若因為比�
         "description": "background 屬性是用來聲明元素的背景，它可以大到網頁整個背景，也可以設定一個一個區塊的背景，或是小到像&lt;button&gt;、&lt;a&gt;都可以使用background屬性來聲明背景樣式。背景可以填單色，也可以做漸層色，或是引入一張圖片來當背景。它們各自有其相應的屬性及屬性值(參數)：
 background-color
 單色的背景，可以用各種色碼（Hex、RGB、HSL）作為",
-        "wordCount": 791
+        "wordCount": 776
     }
 </script>
 
